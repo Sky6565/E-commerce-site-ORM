@@ -1,41 +1,62 @@
 # E-commerce-site-ORM
 
-## User Story
+## Table of Contents
 
-```md
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
-```
+- [Installation](#installation)
+- [Usage](#usage)
+- [Packages](#packages)
+- [License](#license)
+  ​
 
-## Acceptance Criteria
+## Installation
 
-```md
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
-```
+​
+Clone the repository, navigate to the project folder on your CLI and run the following command to install Node.js:
+
+`npm i`
+
+## Usage
+
+Run the following command on your CLI to run the application:
+`mysql -u root -p < db/schema.sql ` then it will provide a place for you to enter your password after wish you'll have to seed your data
+by running `node seeds/index.js` afetrwhcich you run the `npm start`
+
+​
+
+## Packages and Dependencies
+
+- dotenv
+- bcrypt
+- Expressjs
+- Mysql2
+- Sequalize
+
+## license
+
+MIT License
+
+Copyright (c) 2023 Godwin Otabor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Table of Contents
 
 ## Mock-Up
 
-The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia:
-
-![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](<./Assets/Screenshot%20(95).png>)
-
-The following animation shows the application's GET routes to return a single category, a single product, and a single tag being tested in Insomnia:
-
-![In Insomnia, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./Assets/13-orm-homework-demo-02.gif)
-
-The following animation shows the application's POST, PUT, and DELETE routes for categories being tested in Insomnia:
-
-![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
-
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+https://drive.google.com/file/d/1Or7uqxYNv5GvNlbhEiqwfrhDXvv6wje9/view
