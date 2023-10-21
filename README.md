@@ -1,5 +1,7 @@
 # E-commerce-site-ORM
 
+Mysql database and application backend for E-commerce
+
 ## Table of Contents
 
 - [Installation](#installation)
