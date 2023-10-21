@@ -82,7 +82,7 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (TagStuff) {
-      res.status(404).json({ message: "Good job! This Tag has been deleted!" });
+      res.status(200).json({ message: "Good job! This Tag has been deleted!" });
       return;
     }
     if (!TagStuff) {
